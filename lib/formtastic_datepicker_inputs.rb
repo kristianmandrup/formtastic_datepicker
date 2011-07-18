@@ -16,7 +16,7 @@ module Formtastic
   module DatePicker
     protected
 
-    def date_picker_input(method, options = {})
+    def datepicker_input(method, options = {})
       format = options[:format] || DATE_FORMATS[:default] || '%d %b %Y'
       clss = []
       inp_opts = options.delete(:input_html) || {}
