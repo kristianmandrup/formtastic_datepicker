@@ -9,6 +9,7 @@ module Formtastic
         options = options.dup
         options[:input_html] ||= {}
         options[:input_html][:class] = [options[:input_html][:class], "datepicker"].compact.join(' ')
+        options[:wrapper_html][:class] = [options[:wrapper_html][:class], "filter_form_field filter_date_range"].compact.join(" ")
         options[:input_html][:size] ||= "10"
         string_input(method, options)
     end
