@@ -8,11 +8,11 @@ Gem::Specification.new do |s|
   s.description = %q{Use jQuery UI's date picker with formtastic easily}
   s.email = %q{alan@appfission.com}
   s.extra_rdoc_files = [
-    "README"
+    "README.mdown"
   ]
   s.files = Dir.glob("lib/**/*.rb") + [
     "MIT-LICENSE",
-    "README",
+    "README.mdown",
     "Rakefile",
     "init.rb"
   ]
