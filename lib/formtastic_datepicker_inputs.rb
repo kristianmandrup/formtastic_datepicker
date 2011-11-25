@@ -8,7 +8,7 @@ module Formtastic
 
   module DatePicker
 
-  protected
+    protected
 
     def date_picker_input(method, options = {})
       format = options[:format] || I18n.t('date.formats')[:default] || DATE_FORMATS[:default] || '%d %b %Y'
@@ -59,5 +59,6 @@ module Formtastic
     end
 
   end
-
 end
+
+require 'active_admin/inputs' if defined?(ActiveAdmin)
